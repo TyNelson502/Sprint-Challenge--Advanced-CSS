@@ -245,16 +245,30 @@ footer {
 }
 .home .walk .walk-text .btn {
   display: block;
-  background-color: #36454f;
+  background-color: #22283A;
   cursor: pointer;
   width: 100px;
   height: 3.7rem;
-  font-size: 12pt;
+  font-size: 14pt;
+  font-weight: 550;
   border-radius: 0.5rem;
   color: white;
   text-align: center;
   padding-top: 1rem;
   margin-right: 12rem;
+}
+.home .walk .walk-text .btn:hover {
+  display: block;
+  background-color: white;
+  cursor: pointer;
+  width: 100px;
+  height: 3.7rem;
+  font-size: 14pt;
+  font-weight: 550;
+  border-radius: 0.5rem;
+  color: #22283A;
+  text-align: center;
+  padding-top: 1rem;
 }
 .home .walk .walk-text .walk-img {
   width: 46%;

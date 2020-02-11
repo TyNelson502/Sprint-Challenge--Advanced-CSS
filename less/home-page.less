@@ -58,10 +58,11 @@
       }
 
       .btn {
-        .custom-btn(#36454f, 100px, @font-color:white);
+        .custom-btn(@btn-bg-color, 100px, @font-color:white);
         margin-right: 12rem;
-
-
+      }
+      .btn:hover{
+        .custom-btn(white, 100px, @btn-bg-color);
       }
 
     .walk-img {
