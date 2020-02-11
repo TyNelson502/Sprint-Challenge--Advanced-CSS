@@ -7,6 +7,9 @@
   flex-direction: column;
   align-items: center;
 }
+.nodisplay {
+  display: none;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -201,6 +204,11 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home .intro .skyimage {
+    width: 100%;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -218,6 +226,15 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -234,16 +251,21 @@ footer {
   display: flex;
   justify-content: center;
 }
-.home .walk .walk-text {
-  width: 50%;
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+  }
 }
-.home .walk .walk-text h3 {
+.home .walk-text {
+  width: 100%;
+}
+.home .walk-text h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.home .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.home .walk-text .btn {
   display: block;
   background-color: #22283A;
   cursor: pointer;
@@ -257,7 +279,12 @@ footer {
   padding-top: 1rem;
   margin-right: 12rem;
 }
-.home .walk .walk-text .btn:hover {
+@media (max-width: 500px) {
+  .home .walk-text .btn {
+    width: 100%;
+  }
+}
+.home .walk-text .btn:hover {
   display: block;
   background-color: white;
   cursor: pointer;
@@ -270,11 +297,11 @@ footer {
   text-align: center;
   padding-top: 1rem;
 }
-.home .walk .walk-text .walk-img {
+.home .walk-text .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-text .walk-img img {
+.home .walk-text .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
